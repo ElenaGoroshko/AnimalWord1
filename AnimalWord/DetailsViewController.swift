@@ -12,12 +12,13 @@ class DetailsViewController: UIViewController {
 
     var animal : Animal?
 
-    @IBOutlet private weak var ibAnimalName: UILabel!
+    @IBOutlet private weak var ibLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    title = self.animal?.name
+        title = self.animal?.name
+        self.ibLabel.text = self.animal?.details
 
     }
 

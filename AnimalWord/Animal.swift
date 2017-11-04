@@ -11,4 +11,6 @@ import UIKit
 struct Animal {
     let name : String
     let kind : String
+    let details : String
+
 }
