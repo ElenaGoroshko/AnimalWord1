@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,26 +84,27 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yww-KO-JMt">
-                                <rect key="frame" x="20" y="115" width="374" height="506"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-wf-jny">
+                                <rect key="frame" x="20" y="220.66666666666666" width="374" height="295.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xUA-wf-jny" secondAttribute="height" multiplier="353:279" id="GQC-2f-PZi"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sPs-Rk-M5E" firstAttribute="leading" secondItem="YOi-Pm-gcb" secondAttribute="leading" constant="20" id="ATH-AB-PpF"/>
-                            <constraint firstItem="Yww-KO-JMt" firstAttribute="centerY" secondItem="cyY-jH-GTY" secondAttribute="centerY" id="BkY-dH-xtv"/>
-                            <constraint firstItem="YOi-Pm-gcb" firstAttribute="trailing" secondItem="sPs-Rk-M5E" secondAttribute="trailing" constant="20" id="D9i-rc-lby"/>
-                            <constraint firstItem="YOi-Pm-gcb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Yww-KO-JMt" secondAttribute="bottom" constant="20" id="MQo-t1-OxJ"/>
-                            <constraint firstItem="Yww-KO-JMt" firstAttribute="leading" secondItem="sPs-Rk-M5E" secondAttribute="leading" id="goB-li-98U"/>
-                            <constraint firstItem="Yww-KO-JMt" firstAttribute="centerX" secondItem="cyY-jH-GTY" secondAttribute="centerX" id="i3N-Hs-kzI"/>
-                            <constraint firstItem="Yww-KO-JMt" firstAttribute="top" secondItem="sPs-Rk-M5E" secondAttribute="bottom" constant="10" id="ick-wd-DGb"/>
-                            <constraint firstItem="sPs-Rk-M5E" firstAttribute="top" secondItem="YOi-Pm-gcb" secondAttribute="top" constant="20" id="oXE-mN-ph1"/>
-                            <constraint firstItem="Yww-KO-JMt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sPs-Rk-M5E" secondAttribute="bottom" constant="10" id="uqg-5z-NvA"/>
+                            <constraint firstItem="xUA-wf-jny" firstAttribute="leading" secondItem="YOi-Pm-gcb" secondAttribute="leading" constant="20" id="VM4-gj-YUB"/>
+                            <constraint firstItem="YOi-Pm-gcb" firstAttribute="trailing" secondItem="xUA-wf-jny" secondAttribute="trailing" constant="20" id="d5O-ie-jxc"/>
+                            <constraint firstItem="sPs-Rk-M5E" firstAttribute="leading" secondItem="YOi-Pm-gcb" secondAttribute="leading" constant="20" id="g2F-Uz-t9o"/>
+                            <constraint firstItem="xUA-wf-jny" firstAttribute="centerX" secondItem="cyY-jH-GTY" secondAttribute="centerX" id="odK-ch-tbD"/>
+                            <constraint firstItem="xUA-wf-jny" firstAttribute="centerY" secondItem="cyY-jH-GTY" secondAttribute="centerY" id="q9o-GP-4ZJ"/>
+                            <constraint firstItem="YOi-Pm-gcb" firstAttribute="trailing" secondItem="sPs-Rk-M5E" secondAttribute="trailing" constant="20" id="sOh-aD-uHI"/>
+                            <constraint firstItem="sPs-Rk-M5E" firstAttribute="top" secondItem="YOi-Pm-gcb" secondAttribute="top" constant="20" id="vDF-bn-gR0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YOi-Pm-gcb"/>
                     </view>
                     <connections>
-                        <outlet property="ibImageView" destination="Yww-KO-JMt" id="ZQU-IE-NXD"/>
+                        <outlet property="ibImageView" destination="xUA-wf-jny" id="ozi-Bg-AiS"/>
                         <outlet property="ibLabel" destination="sPs-Rk-M5E" id="6hI-V3-k7r"/>
                     </connections>
                 </viewController>
