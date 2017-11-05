@@ -20,27 +20,30 @@ class AllAnimalViewController: UIViewController {
         allAnimalTable.dataSource = self
         allAnimalTable.delegate = self
         generateAnimals()
+        
     }
 
     private func generateAnimals(){
 
-        self.animals["Птицы"] = [Animal(name: "Филин", kind: "Птицы", details: "Хищная ночная птица. Обитает в лесу и степи."),
-                                Animal(name: "Сова", kind: "Птицы", details: "Хищная ночная птица. Обитает в лесу."),
-                                Animal(name: "Орел", kind: "Птицы", details: "Хищная дневная птица. Обитает в горах и степи."),
-                                Animal(name: "Чайка", kind: "Птицы", details: "Дневная птица. Питается рыбой и пищевыми отходами. Обитает на морском побережье."),
-                                Animal(name: "Синица", kind: "Птицы", details: "Дневная птица. Питается насекомыми, зерновыми и ягодами. Обитает в степи, лесах и селеньях людей.")]
+        self.animals["Птицы"] = [Animal(name: "Филин", kind: "Птицы", details: "Хищная ночная птица. Обитает в лесу.",
+                                             image: "eagle-owl.jpg"),
+                                Animal(name: "Сова", kind: "Птицы", details: "Хищная ночная птица. Обитает в лесу.", image: "owl.jpg"),
+                                Animal(name: "Орел", kind: "Птицы", details: "Хищная дневная птица. Обитает в горах и степи.", image: "eagle.jpg"),
+                                Animal(name: "Чайка", kind: "Птицы", details: "Дневная птица. Питается рыбой и пищевыми отходами. Обитает на морском побережье.", image: "seagull.jpg"),
+                                Animal(name: "Синица", kind: "Птицы", details: "Дневная птица. Питается насекомыми, зерновыми и ягодами. Обитает в степи, лесах и селеньях людей.", image: "titmouse.jpg")]
 
-        self.animals["Рыбы"] = [Animal(name: "Щука", kind: "Рыбы", details: "Речная крупная рыба. Питается мелкой рыбой."),
-                                Animal(name: "Окунь", kind: "Рыбы", details: "Речная средняя рыба. Питается мелкой рыбой.")]
+        self.animals["Рыбы"] = [Animal(name: "Щука", kind: "Рыбы", details: "Речная крупная рыба. Питается мелкой рыбой.",
+                                           image: "luce.jpg"),
+                                Animal(name: "Окунь", kind: "Рыбы", details: "Речная средняя рыба. Питается мелкой рыбой.", image: "perch.jpg")]
 
-        self.animals["Млекопитающие"] = [Animal(name: "Слон", kind: "Млекопитающие", details: "Крупное сухопутное животное. Питается травой, овощами, фруктами."),
-                                        Animal(name: "Собака", kind: "Млекопитающие",  details: "Среднее домашнее животное. Всеядное"),
-                                        Animal(name: "Мышь", kind: "Млекопитающие", details: "Мелкое сухопутное животное. Всеяное, вплоть до кактусов и мыла :-)"),
-                                        Animal(name: "Лиса", kind: "Млекопитающие", details: "Средний сухопутный хищник.")]
+        self.animals["Млекопитающие"] = [Animal(name: "Слон", kind: "Млекопитающие", details: "Крупное сухопутное животное. Питается травой, овощами, фруктами.", image: "elephant.jpg"),
+                                        Animal(name: "Собака", kind: "Млекопитающие",  details: "Среднее домашнее животное. Всеядное", image: "dog.jpg"),
+                                        Animal(name: "Мышь", kind: "Млекопитающие", details: "Мелкое сухопутное животное. Всеяное, вплоть до кактусов и мыла :-)", image: "mouse.jpg"),
+                                        Animal(name: "Лиса", kind: "Млекопитающие", details: "Средний сухопутный хищник.", image: "fox.jpg")]
 
-        self.animals["Насекомые"] = [Animal(name: "Оса", kind: "Насекомые", details: "Жалящее насекомое. Всеядное. Живет большими колониями."),
-                                    Animal(name: "Тарантул", kind: "Насекомые", details: "Крупный хищный паук."),
-                                    Animal(name: "Махаон", kind: "Насекомые", details: "Крупная бабочка.")]
+        self.animals["Насекомые"] = [Animal(name: "Оса", kind: "Насекомые", details: "Жалящее насекомое. Всеядное. Живет большими колониями.", image: "wasp.jpg"),
+                                    Animal(name: "Тарантул", kind: "Насекомые", details: "Крупный хищный паук.", image: "tarantula.jpg"),
+                                    Animal(name: "Махаон", kind: "Насекомые", details: "Крупная бабочка.", image: "machaon.jpg")]
         animalKeys = Array(self.animals.keys)
     }
 

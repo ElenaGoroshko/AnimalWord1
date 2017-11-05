@@ -12,13 +12,15 @@ class DetailsViewController: UIViewController {
 
     var animal : Animal?
 
+    @IBOutlet private weak var ibImageView: UIImageView!
     @IBOutlet private weak var ibLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = self.animal?.name
-        self.ibLabel.text = self.animal?.details
+        guard let item = animal else { return }
+        title = item.name
+        self.ibLabel.text = item.details
+        self.ibImageView.image = UIImage(imageLiteralResourceName: item.image)
 
     }
 

@@ -12,5 +12,5 @@ struct Animal {
     let name : String
     let kind : String
     let details : String
-
+    let image : String
 }
